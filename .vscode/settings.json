@@ -1,0 +1,8 @@
+{
+	"python.analysis.extraPaths": [
+		"C:/Program Files/KiCad/6.99/bin/Lib/site-packages"
+	],
+	"cSpell.words": [
+		"pcbnew"
+	]
+}

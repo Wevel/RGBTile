@@ -1,0 +1,24 @@
+10-09 17:41:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 378:Plugin executed on: 'win32'
+10-09 17:41:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 379:Plugin executed with python version: '3.9.10 (main, Jun 18 2022, 12:51:08) [MSC v.1932 64 bit (AMD64)]'
+10-09 17:41:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 380:KiCad build version: (6.99.0-2183-g82ebc247b8)
+10-09 17:41:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 381:Plugin version: 1.0.0
+10-09 17:41:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 382:Frame repr: <wx._core.Frame object at 0x00000173934C9DC0>
+10-09 17:41:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 123:getting a list of all footprints on board
+10-09 17:41:16 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 559:Reference designator is: D
+10-09 17:41:16 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 560:Reference number is: 8
+10-09 17:41:16 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 592:Sorted and filtered list:
+['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8']
+10-09 17:41:24 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 625:Footprints to place:
+['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8']
+10-09 17:41:24 com_github_MitjaNemec_PlaceFootprints.place_footprints 253:Starting placing with circular layout
+10-09 17:41:24 com_github_MitjaNemec_PlaceFootprints.place_footprints 263:reference footprint position at: VECTOR2I(168000000, 86500000)
+10-09 17:41:24 com_github_MitjaNemec_PlaceFootprints.place_footprints 268:rotation center at: (168000000, 106500000.0)
+10-09 17:41:24 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 638:Fatal error when executing place footprints
+Traceback (most recent call last):
+  File "C:\Users\Charlie\Documents\KiCad\6.99\3rdparty\plugins\com_github_MitjaNemec_PlaceFootprints\action_place_footprints.py", line 634, in Run
+    placer.place_circular(footprints_to_place, ref_fp_ref, radius, delta_angle)
+  File "C:\Users\Charlie\Documents\KiCad\6.99\3rdparty\plugins\com_github_MitjaNemec_PlaceFootprints\place_footprints.py", line 274, in place_circular
+    fp.fp.SetPosition(pcbnew.wxPoint(*new_position))
+  File "C:\Program Files\KiCad\6.99\bin\Lib\site-packages\pcbnew.py", line 18907, in SetPosition
+    return _pcbnew.FOOTPRINT_SetPosition(self, aPos)
+TypeError: in method 'FOOTPRINT_SetPosition', argument 2 of type 'VECTOR2I const &'
